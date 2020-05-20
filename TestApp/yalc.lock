@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "posthog-react-native": {
+      "signature": "d2999febec00e1f25acc12b6ad4a99a4",
+      "file": true
+    }
+  }
+}
