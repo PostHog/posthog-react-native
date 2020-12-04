@@ -48,7 +48,7 @@ RCT_EXPORT_METHOD(
     config.captureInAppPurchases = [options[@"ios"][@"captureInAppPurchases"] boolValue];
     config.shouldUseBluetooth = [options[@"ios"][@"shouldUseBluetooth"] boolValue];
     config.shouldUseLocationServices = [options[@"ios"][@"shouldUseLocationServices"] boolValue];
-    config.maxQueueSize = [options[@"ios"][@"maxQueueSize"] integerValue];
+    config.maxQueueSize = [options[@"ios"][@"maxQueueSize"] integerValue]
 
     config.libraryName = options[@"context"][@"$lib"];
     config.libraryVersion = options[@"context"][@"$lib_version"];

@@ -1,0 +1,68 @@
+name: Publish
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  bundle:
+    name: Bundle ${{ matrix.platform }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # platform: ["ios", "android"]
+        platform: ['ios']
+    steps:
+      # Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Setup git credentials for tag pushing
+      - name: Setup git credentials
+        uses: fregante/setup-git-token@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Setup Node
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@bansho' # Defaults to the user or organization that owns the workflow file
+
+      # Configure cache functionality
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Restore/Save cache
+        uses: actions/cache@v1
+        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      # Install dependencies
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      # Get branch version string from package.json
+      - name: Get package version
+        id: get-package-version
+        run: |
+          echo "::set-output name=value::$(grep -m1 version package.json | awk -F: '{ print $2 }' | sed 's/[\", ]//g')"
+
+      - name: Tag commit
+        run: |
+          git tag -a v${{ steps.get-package-version.outputs.value }} -m "v${{ steps.get-package-version.outputs.value }}"
+          git push origin ${{ github.ref }} --tags
+
+      # Upload package to Github
+      - name: Publish
+        run: yarn publish bansho-mobile-rn-app-v${{ steps.get-package-version.outputs.value }}.tgz
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
