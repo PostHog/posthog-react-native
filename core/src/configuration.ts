@@ -6,7 +6,6 @@ const defaults = {
 		collectDeviceId
 	}),
 	ios: ({
-		enableAdvertisingCapturing = true,
 		capturePushNotifications = false,
 		captureInAppPurchases = false,
 		shouldUseBluetooth = false,
@@ -15,7 +14,6 @@ const defaults = {
 	}: Partial<Configuration['ios']>) => ({
 		captureInAppPurchases,
 		capturePushNotifications,
-		enableAdvertisingCapturing,
 		maxQueueSize,
 		shouldUseBluetooth,
 		shouldUseLocationServices

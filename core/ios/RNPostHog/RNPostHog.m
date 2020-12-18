@@ -43,7 +43,6 @@ RCT_EXPORT_METHOD(
     config.flushAt = [options[@"flushAt"] integerValue];
     config.flushInterval = [options[@"flushInterval"] integerValue];
 
-    config.enableAdvertisingCapturing = [options[@"ios"][@"enableAdvertisingCapturing"] boolValue];
     config.capturePushNotifications = [options[@"ios"][@"capturePushNotifications"] boolValue];
     config.captureInAppPurchases = [options[@"ios"][@"captureInAppPurchases"] boolValue];
     config.shouldUseBluetooth = [options[@"ios"][@"shouldUseBluetooth"] boolValue];

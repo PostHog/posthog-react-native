@@ -12,7 +12,7 @@
     "dev-android": "cd ../core && yalc publish && cd ../TestApp && yalc update posthog-react-native && yarn && react-native link && yarn run android"
   },
   "dependencies": {
-    "posthog-react-native": "file:.yalc/posthog-react-native",
+    "posthog-react-native": "1.1.0",
     "react": "16.11.0",
     "react-native": "0.62.2"
   },
