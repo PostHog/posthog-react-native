@@ -20,7 +20,6 @@ export interface Configuration {
 		collectDeviceId?: boolean
 	}
 	ios: {
-		enableAdvertisingCapturing?: boolean
 		capturePushNotifications?: boolean
 		captureInAppPurchases?: boolean
 		maxQueueSize?: number

@@ -64,12 +64,6 @@ export module PostHog {
 		 */
 		ios?: {
 			/**
-			 * Whether the posthog client should capture advertisting info.
-			 *
-			 * Enabled by default.
-			 */
-			enableAdvertisingCapturing?: boolean
-			/**
 			 * Whether the posthog client should use location services.
 			 * If `true` and the host app hasn't asked for permission to use location services then the user will be
 			 * presented with an alert view asking to do so. `false` by default. If `true`, please make sure to add a
@@ -182,7 +176,7 @@ export module PostHog {
 		 * await posthog.setup('YOUR_API_KEY', {
 		 *   captureAppLifecycleEvents: true,
 		 *   ios: {
-		 *     enableAdvertisingCapturing: true
+		 *     capturePushNotifications: true
 		 *   }
 		 * })
 		 * ```

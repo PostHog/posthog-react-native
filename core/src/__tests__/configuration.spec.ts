@@ -29,7 +29,6 @@ it('uses the default configuration', async () => {
 			ios: {
 				captureInAppPurchases: false,
 				capturePushNotifications: false,
-				enableAdvertisingCapturing: true,
 				maxQueueSize: 1000,
 				shouldUseBluetooth: false,
 				shouldUseLocationServices: false
@@ -71,7 +70,6 @@ it('produces a valid configuration', async () => {
 			ios: {
 				captureInAppPurchases: false,
 				capturePushNotifications: true,
-				enableAdvertisingCapturing: true,
 				maxQueueSize: 1000,
 				shouldUseBluetooth: false,
 				shouldUseLocationServices: false
