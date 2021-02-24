@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.source_files        = 'ios/**/*.{m,h}'
   s.static_framework    = true
 
-  s.dependency          'PostHog', '~> 1.2.1'
+  s.dependency          'PostHog', '~> 1.2.3'
   s.dependency          'React'
 end
