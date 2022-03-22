@@ -229,7 +229,7 @@ export module PostHog {
 		 * If you don't have a userId but want to record traits, you should pass nil.
 		 * @param properties A dictionary of properties you know about the user. Things like: email, name, plan, etc.
 		 */
-		public async identify(distinctId: string, properties: JsonMap = {}) {
+		public async identify(distinctId: string | null, properties: JsonMap = {}) {
 			await this.middlewares.run('identify', { distinctId, properties })
 		}
 

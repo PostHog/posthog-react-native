@@ -42,7 +42,7 @@ export interface Options {
 export interface Bridge {
 	setup(configuration: Configuration): Promise<void>
 	capture(event: string, properties: JsonMap): Promise<void>
-	identify(distinctId: string, properties: JsonMap): Promise<void>
+	identify(distinctId: string | null, properties: JsonMap): Promise<void>
 	screen(screen: string, properties: JsonMap): Promise<void>
 	alias(alias: string): Promise<void>
 	reset(): Promise<void>
