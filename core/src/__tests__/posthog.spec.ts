@@ -56,6 +56,8 @@ it('does .screen()', () => testCall('screen')('Shopping cart', { from: 'Product 
 
 it('does .identify()', () => testCall('identify')('sloth', { eats: 'leaves' }))
 
+it('does .identify() with null', () => testCall('identify')(null, { eats: 'leaves' }))
+
 it('does .alias()', () => testCall('alias')('new alias'))
 
 it('does .reset()', testCall('reset'))
