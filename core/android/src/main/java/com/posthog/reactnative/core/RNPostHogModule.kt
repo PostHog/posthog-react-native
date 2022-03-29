@@ -32,7 +32,6 @@ import com.facebook.react.bridge.*
 import com.posthog.android.PostHog
 import com.posthog.android.Options
 import com.posthog.android.Properties
-import com.posthog.android.Traits
 import com.posthog.android.ValueMap
 import com.posthog.android.internal.Utils.getPostHogSharedPreferences
 import java.util.concurrent.TimeUnit
