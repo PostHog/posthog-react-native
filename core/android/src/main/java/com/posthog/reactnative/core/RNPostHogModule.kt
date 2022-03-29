@@ -198,10 +198,11 @@ class RNPostHogModule(context: ReactApplicationContext): ReactContextBaseJavaMod
             )
 
     @ReactMethod
-    fun identify(distinctId: String, properties: ReadableMap?) =
+    fun identify(distinctId: String?, properties: ReadableMap?) =
             posthog.identify(
                     distinctId,
-                    Properties() from properties
+                    Properties() from properties,
+                    null
             )
 
     @ReactMethod

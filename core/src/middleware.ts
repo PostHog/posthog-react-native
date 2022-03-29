@@ -33,7 +33,7 @@ export interface IdentifyPayload
 	extends MiddlewarePayload<
 		'identify',
 		{
-			distinctId: string
+			distinctId: string | null
 			properties: JsonMap
 		}
 	> {}
