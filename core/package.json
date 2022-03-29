@@ -1,6 +1,6 @@
 {
   "name": "posthog-react-native",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The hassle-free way to add PostHog to your React-Native app.",
   "license": "MIT",
   "main": "build/cjs/index.js",
