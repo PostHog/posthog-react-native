@@ -1386,9 +1386,9 @@ async-limiter@~1.0.0:
   integrity sha512-csOlWGAcRFJaI6m+F2WKdnMKr4HhdhFVBk0H/QbJFMCr+uO2kwohwXQPxw/9OCxp05r5ghVBFSyioixx3gfkNQ==
 
 async@^2.4.0:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
-  integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.6.4.tgz#706b7ff6084664cd7eae713f6f965433b5504221"
+  integrity sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==
   dependencies:
     lodash "^4.17.14"
 
@@ -4846,10 +4846,10 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-posthog-react-native@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/posthog-react-native/-/posthog-react-native-1.1.1.tgz#818298574ff8694c49bce46eec486fe09d4d0758"
-  integrity sha512-Ld97hNPVI986wjDfLjOQo6zNYAGrl2OGOvIcsY4KxbVqECnAxBjfAUTPvmJy4gUZsk1Oxcmolos1YyQAju5O+A==
+posthog-react-native@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/posthog-react-native/-/posthog-react-native-1.1.2.tgz#b374c43f1630d0bf689a439ad6f5a61c0b1fb110"
+  integrity sha512-rEjODkgJ8LY1M4Jfekq9IEC972DfRwYmv8q9Ybxqh7vajI0K4yqnDHbF4N8z9k+V6av/1H06EHOO63wLiawE/A==
 
 prelude-ls@~1.1.2:
   version "1.1.2"
