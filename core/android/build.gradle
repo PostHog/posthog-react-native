@@ -9,7 +9,7 @@ buildscript {
     ext.defaultKotlinVersion = '1.3.50'
 
     repositories {
-        jcenter()
+        mavenCentral()
         maven { url 'https://maven.google.com' }
     }
     dependencies {
