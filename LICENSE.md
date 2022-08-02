@@ -1,7 +1,5 @@
 The MIT License (MIT)
 
-Copyright (c) 2018 Segment.io, Inc.
-
 Copyright (c) 2020 Hiberly Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
