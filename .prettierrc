@@ -1,7 +1,0 @@
-semi: false
-singleQuote: true
-printWidth: 120
-overrides:
-  - files: '*.{ts,js}'
-    options:
-      useTabs: true
