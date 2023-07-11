@@ -9,6 +9,12 @@ Please see the main [PostHog docs](https://www.posthog.com/docs).
 
 Specifically, the [React Native integration](https://www.posthog.com/docs/integrations/react-native-integration) details.
 
+## [Issues or Pull Requests?](https://github.com/posthog/posthog-js-lite)
+
+Please create an issue at the unified JS repository where the React Native code is hosted:
+https://github.com/posthog/posthog-js-lite
+
+
 ## Questions?
 
 ### [Join our Slack community.](https://join.slack.com/t/posthogusers/shared_invite/enQtOTY0MzU5NjAwMDY3LTc2MWQ0OTZlNjhkODk3ZDI3NDVjMDE1YjgxY2I4ZjI4MzJhZmVmNjJkN2NmMGJmMzc2N2U3Yjc3ZjI5NGFlZDQ)
